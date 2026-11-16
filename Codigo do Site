@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Zana Côrtes | Portfólio de Engenharia</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos Customizados (Recurso Novo: Transições e Animações) -->
+    <style>
+        body {
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 100px 0;
+        }
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 12px;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+        }
+        .skill-badge {
+            transition: all 0.2s ease;
+        }
+        .skill-badge:hover {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de Navegação Funcional -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#perfil"><i class="fas fa-microchip me-2"></i>Arthur Zana Côrtes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <!-- Recurso Novo: Botão de Alternância Dark/Light Mode -->
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button id="btn-theme" class="btn btn-outline-light btn-sm rounded-pill px-3" onclick="toggleTheme()">
+                            <i class="fas fa-moon" id="theme-icon"></i> <span id="theme-text">Modo Escuro</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção de Perfil -->
+    <header id="perfil" class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Arthur Zana Côrtes</h1>
+                    <p class="lead mb-4">Estudante de <strong>Engenharia de Controle e Automação</strong> | Desenvolvedor de Sistemas Embarcados, Robótica e Automação Industrial.</p>
+                    <p class="text-white-50 mb-4">Prontuário: CT3037193 | Catanduva - SP</p>
+                    <a href="#projetos" class="btn btn-primary btn-lg px-4 me-2 shadow">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-outline-light btn-lg px-4">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Recurso Novo: Seção Dedicada de Habilidades -->
+    <section id="habilidades" class="py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Habilidades Técnicas</h2>
+                <p class="text-muted">Tecnologias e ferramentas utilizadas em projetos acadêmicos e práticos</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-3 col-6">
+                    <div class="p-4 bg-body shadow-sm rounded-4 h-100 skill-badge">
+                        <i class="fab fa-python fa-3x text-primary mb-3"></i>
+                        <h5>Python / ROS2</h5>
+                        <p class="text-muted small">Visão computacional, OpenCV e nós ROS2.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4 bg-body shadow-sm rounded-4 h-100 skill-badge">
+                        <i class="fas fa-microchip fa-3x text-success mb-3"></i>
+                        <h5>Sistemas Embarcados</h5>
+                        <p class="text-muted small">ESP32, Arduino e C/C++ bare-metal.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4 bg-body shadow-sm rounded-4 h-100 skill-badge">
+                        <i class="fab fa-linux fa-3x text-warning mb-3"></i>
+                        <h5>Linux Ubuntu</h5>
+                        <p class="text-muted small">Ambiente de desenvolvimento e automação.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4 bg-body shadow-sm rounded-4 h-100 skill-badge">
+                        <i class="fas fa-code fa-3x text-danger mb-3"></i>
+                        <h5>HTML / Bootstrap</h5>
+                        <p class="text-muted small">Desenvolvimento web responsivo e interfaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projetos" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Meus Projetos</h2>
+                <p class="text-muted">Principais desenvolvimentos em engenharia, automação e software</p>
+            </div>
+            <div class="row g-4">
+                <!-- Projeto 1 -->
+                <div class="col-md-4">
+                    <div class="card project-card shadow-sm h-100 bg-body">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Robô Agrícola com ROS2</h5>
+                            <p class="card-text text-muted flex-grow-1">Pipeline de visão computacional com ROS2, calibração de câmera monocular e estimativa de distância por marcadores ArUco com RViz2.</p>
+                            <span class="badge bg-primary text-white align-self-start mb-3">ROS2 / Python / OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="col-md-4">
+                    <div class="card project-card shadow-sm h-100 bg-body">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Esteira Industrial em Assembly</h5>
+                            <p class="card-text text-muted flex-grow-1">Sistema de controle para esteira transportadora industrial programado em Assembly AVR (ATmega328P) com contagem de peças e parada de segurança.</p>
+                            <span class="badge bg-success text-white align-self-start mb-3">Assembly AVR / Hardware</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="col-md-4">
+                    <div class="card project-card shadow-sm h-100 bg-body">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Labirinto Elétrico com ESP32</h5>
+                            <p class="card-text text-muted flex-grow-1">Dispositivo interativo de medição de reflexo e tempo usando ESP32, display LCD 16x2, entradas de toque e lógica de máquina de estados.</p>
+                            <span class="badge bg-warning text-dark align-self-start mb-3">ESP32 / C++ / Eletrônica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <h2 class="fw-bold mb-3">Entre em Contato</h2>
+                    <p class="text-muted mb-4">Tem interesse em parcerias, projetos ou dúvidas sobre meu trabalho? Envie uma mensagem!</p>
+                    <form class="bg-body p-4 p-md-5 rounded-4 shadow-sm text-start">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Seu Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Seu E-mail</label>
+                            <input type="email5" class="form-control" id="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 Arthur Zana Côrtes. Todos os direitos reservados.</p>
+            <p class="small text-white-50">Engenharia de Controle e Automação | Prontuário: CT3037193</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script do Recurso Novo (Dark/Light Mode e transições) -->
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            const themeText = document.getElementById('theme-text');
+            
+            if (html.getAttribute('data-bs-theme') === 'light') {
+                html.setAttribute('data-bs-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+                themeText.textContent = 'Modo Claro';
+            } else {
+                html.setAttribute('data-bs-theme', 'light');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+                themeText.textContent = 'Modo Escuro';
+            }
+        }
+    </script>
+</body>
+</html>
