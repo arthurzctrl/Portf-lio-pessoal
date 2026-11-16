@@ -1,10 +1,10 @@
-# Portfólio Acadêmico e Profissional - Engenharia de Automação
+# Portfólio Acadêmico e Profissional
 
 ## Nome do Aluno
-Arthur Zana Côrtes (Prontuário: CT3037193)
+Arthur Zana Côrtes
 
 ## Descrição do Portfólio
-Este portfólio web foi desenvolvido para apresentar minha trajetória acadêmica e meus principais projetos desenvolvidos no curso de **Engenharia de Controle e Automação**. A página reúne informações sobre meu perfil, competências técnicas e desenvolvimentos práticos em robótica, sistemas embarcados e automação.
+Este portfólio web foi desenvolvido para apresentar minha trajetória acadêmica e meus principais projetos desenvolvidos. A página reúne informações sobre meu perfil, competências técnicas e desenvolvimentos práticos.
 
 ## Tecnologias Utilizadas
 - **HTML5 e CSS3** (Estruturação e estilização customizada)
